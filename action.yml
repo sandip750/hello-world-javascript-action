@@ -1,13 +1,13 @@
-name: "Hello World"
-description: 'greet some and note the time'
+name: 'Hello World'
+description: 'Greet someone and record the time'
 inputs:
-	who-to-greet: # id from input
-		description: 'who to greet'
-		required: true
-		default: world
+  who-to-greet:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
 outputs:
-	time: # time to greet
-		description: 'time to greet'
+  time: # id of output
+    description: 'The time we we greeted you'
 runs:
-	using: 'node12'
-	main: 'index.js'
+  using: 'node12'
+  main: 'index.js'
